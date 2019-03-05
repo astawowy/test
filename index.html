@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Zadanie testowe - Aleksander Stawowy</title>
+    <!--PODSTAWOWE STYLE ABOVE THE FOLD-->
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            padding-bottom: 2rem;
+        }
+        body {
+            width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .colWhite {
+            color: white;
+        }
+        .colLightGray {
+            color: #ebebeb;
+        }
+        .colDarkGray {
+            color: #9f9f9f;
+        }
+        .colBlack {
+            color: black;
+        }
+        .colYellow {
+            color: #ffef3a;
+        }
+        .colRed {
+            color: #ea2423;
+        }
+        .bgBlack {
+            background-color: black;
+        }
+        .bgRed {
+            background-color: #ea2423;
+        }
+        b {
+            font-weight: 900;
+            display: inline;
+            display: inline-block;
+        }
+        .tCenter {
+            text-align: center;
+        }
+        .relative {
+            position: relative
+        }
+        .absolute {
+            position: absolute
+        }
+        .w100 {
+            width: 100%;
+        }
+        .w49 {
+            width: 49% !important;
+        }
+        .h5r {
+            height: 5rem;
+        }
+        .strike {
+            text-decoration: line-through;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900&amp;subset=latin-ext" rel="stylesheet">
+    <link href="assets/css/header.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+<div id="header" class="relative bgRed w100">
+    <div class="clockbox absolute">
+        <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+            <g id="face">
+                <circle class="circle" cx="300" cy="300" r="253.9"/>
+                <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+            </g>
+            <g id="hour">
+                <path class="hour-arm" d="M300.5 298V142"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+            </g>
+            <g id="minute">
+                <path class="minute-arm" d="M300.5 298V67"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+            </g>
+            <g id="second">
+                <path class="second-arm" d="M300.5 350V55"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+            </g>
+        </svg>
+    </div>
+
+    <div class="clockOverlay absolute">
+        <div id="weekDay"></div>
+    </div>
+    <div class="dialogueBox absolute tCenter bgBlack">
+        <b>WŁAŚNIE</b> TRWA
+        <div class="triangle absolute"></div>
+    </div>
+    <div class="delivery absolute tCenter">
+        <div class="truckIcon"></div>
+        dostawa gratis
+    </div>
+    <div class="discount absolute">
+        <div class="small">RABATY NAWET DO</div>
+        <div class="big relative colYellow">80</div>
+    </div>
+    <div class="counterBox absolute">
+        <div class="colWhite tCenter">DO KOŃCA POZOSTAŁO</div>
+        <div id="counter" class="tCenter"></div>
+    </div>
+</div>
+
+<div class="pageContainer">
+    <div class="relative h5r">
+        <div class="warning absolute">Akcja “Gorący Czwartek” nie łączy się z innymi promocjami</div>
+        <div class="hourProducts absolute">PRODUKTY NA GODZINĘ <div id="getHour"></div></div>
+        <div class="selectBox">
+            Liczba produktów :
+            <select id="getCount">
+                <option value="2">2</option>
+                <option value="4" selected>4</option>
+                <option value="8">8</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="productContainer">
+    </div>
+</div>
+
+<script src="assets/js/jquery-3.3.1.min.js" ></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/header.js"></script>
+</body>
+
+</html>
+
