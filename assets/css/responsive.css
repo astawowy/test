@@ -1,0 +1,125 @@
+@media screen and (max-width: 60rem) {
+
+    .product {
+        width: 32.33333%;
+    }
+    .delivery {
+        bottom: -3vw;
+        left: 33%;
+        height: 10vw;
+        width: 10vw;
+        background-size: 50%;
+        background-position: 47% 20%;
+        padding-top: 5vw;
+        font-size: 1.6vw;
+    }
+    .discount {
+        left: auto;
+        right: 8%;
+        text-align: right;
+        transform: translate(0, -50%);
+    }
+    .discount .small {
+        padding: 0;
+        margin-right: -5vw;
+        font-size: 1.6vw;
+    }
+    .counterBox {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 45rem) {
+    body {
+        width: 100%;
+    }
+    .clockOverlay {
+        font-size: 3.5vw;
+        left: 0.8vw;
+    }
+    .dialogueBox {
+        padding: 2vw;
+        z-index: 2;
+        top: 1vw;
+        transform: none;
+        font-size: 2vw;
+    }
+    .dialogueBox .triangle {
+        bottom: -10px;
+        border-width: 10px 20px 0 0;
+    }
+    .delivery {
+        height: 15vw;
+        width: 15vw;
+        background-size: 60%;
+        background-position: 45% 20%;
+        padding-top: 8vw;
+        font-size: 2.4vw;
+    }
+    .discount .small {
+        font-size: 2.4vw;
+    }
+    .hourProducts, .warning {
+        margin-left: 0.5rem;
+    }
+    .selectBox {
+        padding-right: 0.5rem;
+    }
+
+    .product {
+        width: 49%;
+        margin: 0.5%;
+    }
+}
+
+@media screen and (max-width: 36rem) {
+    .selectBox {
+        margin: 2.9rem 0;
+    }
+}
+
+@media screen and (max-width: 28rem) {
+    .selectBox {
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 5.5rem 1rem 0 0;
+    }
+    .warning {
+        background-size: 0.8rem;
+    }
+    .hourProducts, .warning {
+        margin-left: 1rem;
+    }
+    .hourProducts {
+        bottom: auto;
+        top: 3rem;
+        left: -0.1rem;
+    }
+    .h5r {
+        height: 8rem;
+    }
+    .productContent .priceGrossPromo {
+        top: -1px;
+        left: -1px;
+        right: -1px
+        border: 1px solid;
+        padding: 0.5rem 0.2rem;
+        width: auto;
+    }
+    .productContent .availability {
+        top: 1.9rem;
+        left: -1px;
+        right: -1px;
+        padding: 0.3rem;
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 23rem) {
+    .productContent .priceGrossBase {
+        bottom: 3.2rem;
+        left: 0;
+    }
+}

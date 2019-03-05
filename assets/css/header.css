@@ -1,0 +1,151 @@
+#header {
+    height: 20vw;
+}
+.clockbox,
+#clock {
+    width: auto;
+    height: 100%;
+    top: 0;
+    left: 1%;
+    z-index: 0;
+}
+.circle {
+    fill: none;
+    stroke: none;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+.mid-circle {
+    fill: #000;
+}
+.hour-marks {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+.hour-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+.minute-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+.second-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+.sizing-box {
+    fill: none;
+}
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    *transition: transform .5s ease-in-out;
+}
+.clockOverlay {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+    font-size: 2vw;
+    font-weight: 900;
+    z-index: 1;
+}
+.stretch {
+    width: 15vw;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.dialogueBox {
+    padding: 1.2vw;
+    z-index: 2;
+    width: auto;
+    height: auto;
+    color: white;
+    top: 50%;
+    transform: translateY(-125%);
+    left: 18vw;
+    font-size: 1.4vw;
+}
+.dialogueBox .triangle {
+    overflow: hidden;
+    left: 0;
+    bottom: -15px;
+    background: transparent;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 40px 0 0;
+    border-color: #000000 transparent transparent transparent;
+}
+.delivery {
+    bottom: -1vw;
+    transform: rotate(15deg);
+    left: 20vw;
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    background: white;
+    background-image: url("../img/truck.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 50% 15%;
+    padding-top: 3.1vw;
+    font-size: 1vw;
+}
+.discount {
+    left: 50%;
+    top: 50%;
+    transform: translate(-55%, -50%);
+}
+.discount .small {
+    padding-left: 0.5vw;
+    font-size: 1.2vw;
+}
+.discount .big {
+    font-size: 8.5vw;
+    line-height: 7.5vw;
+}
+.discount .big:after {
+    content: '%';
+    font-size: 5vw;
+    position: absolute;
+    top: 0;
+    line-height: 5vw;
+}
+.counterBox {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3%;
+    color: white;
+    border: 3px solid white;
+    padding: 1.5vw;
+    padding-bottom: 2.2vw;
+    font-size: 1vw;
+}
+#counter {
+    width: 20vw;
+    font-size: 2.5vw;
+    font-weight: 600;
+    display: inline-block;
+}
+#counter .relative {
+    display: inline-block;
+    width: auto;
+}
+#counter .counterBelow {
+    bottom: -1vw;
+    font-size: 1vw;
+    font-weight: 400;
+    text-transform: uppercase;
+}
